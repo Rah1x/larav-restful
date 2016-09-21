@@ -45,7 +45,7 @@ class checkAttempts
             }
             else
             {
-                \Request::session()->put($sess_msg_key, array(false, '<strong class="red-txt">Too Many Attempts!</strong> &nbsp;&nbsp;Please try again after a few minutes.'));
+                \Request::session()->put($sess_msg_key, array(false, '<strong class="red-txt">Too Many Attempts!</strong> Please try again after a few minutes.'));
                 \Request::session()->put('au_last_attempt', time());
                 \Request::session()->save();
 

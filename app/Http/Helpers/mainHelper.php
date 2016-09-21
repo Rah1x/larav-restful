@@ -73,13 +73,17 @@ class mainHelper
         if(empty($msg)){return false;}
 
         $msg_v = '';
-        if(is_array($msg)){
-        if($succ==false){$msg_v = 'Please clear the following Error(s):<br /><br />- '; }
-        $fv_msg_ar=array();
-        foreach($msg as $fv_k=>$fv_v){$fv_msg_ar = array_merge($fv_msg_ar, $fv_v);}
-        $msg_v.=@implode('<br />- ', $fv_msg_ar);
-        } else {
-        $msg_v = $msg;
+        if(is_array($msg))
+        {
+            if($succ==false){$msg_v = 'Please clear the following Error(s):<br /><br />- '; }
+
+            $fv_msg_ar=array();
+            foreach($msg as $fv_k=>$fv_v){$fv_msg_ar = array_merge($fv_msg_ar, $fv_v);}
+            $msg_v.=@implode('<br />- ', $fv_msg_ar);
+        }
+        else
+        {
+            $msg_v = $msg;
         }
 
         \Request::session()->put($key, array($succ, $msg_v));

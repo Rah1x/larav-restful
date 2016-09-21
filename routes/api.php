@@ -14,5 +14,6 @@ Route::group([
 ],
 function(){
     Route::post('user', ['as'=>'user.create', 'uses'=>'userController@create']);
+    Route::post('user/signin', ['as'=>'user.signin', 'uses'=>'userController@signin']);
     Route::get('user/{user_id}', ['as'=>'user.get', 'uses'=>'userController@get']);
 });
