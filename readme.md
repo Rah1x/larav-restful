@@ -14,7 +14,7 @@
 2. Password encryption
 3. Fields validation
 
-# Imp work to see
+# Files to see
 - config\app.php
 - routes\api.php
 - app\Http\Helpers\*
