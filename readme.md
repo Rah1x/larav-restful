@@ -1,4 +1,4 @@
-#Creating Restful APIs using Laravel 5.3
+#Creating Restful APIs using Laravel ~5.3
 
 # Stack
 - PHP 7
