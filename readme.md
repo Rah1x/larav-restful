@@ -1,9 +1,9 @@
 #Creating Restful APIs using Laravel 5.3
 
 # Stack
-- PHP7
+- PHP 7
 - Redis
-- Laravel5.3
+- Laravel 5.* (directory structore is 5.3)
 
 # Scenario
 1. add User (just email, password, added_on)
@@ -11,7 +11,7 @@
 
 # Validations
 1. Attempts Check
-2. Password encryption
+2. Password encryption (to play around ive created mine enc method, but you should use laravel's own encryption instead)
 3. Fields validation
 
 # Files to see
